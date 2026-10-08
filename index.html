@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+  Name: Sangye Tengkhar
+  Date: 10.08.2026
+  CSC 372-01
+
+  This is the index.html page for the TVmaze Show Gallery project. It provides
+  a search form where a visitor can look up a TV show, and a flex-based gallery
+  that displays matching shows with their details and main cast.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TVmaze Show Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>TVmaze Show Gallery</h1>
+    <form id="search-form">
+      <input
+        type="text"
+        id="search-input"
+        name="query"
+        placeholder="Search for a TV show (e.g., friends)"
+        autocomplete="off"
+      />
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
+  <main>
+    <p id="status"></p>
+    <section id="gallery"></section>
+  </main>
+
+  <footer>
+    <p>
+      Data from
+      <a href="https://www.tvmaze.com/" target="_blank" rel="noopener noreferrer">TVmaze</a>
+      &middot; Licensed under
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA</a>
+    </p>
+  </footer>
+</body>
+</html>
